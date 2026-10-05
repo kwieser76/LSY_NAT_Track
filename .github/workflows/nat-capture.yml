@@ -1,0 +1,52 @@
+# Saves the FAA's North Atlantic track message twice a day into archive/ of this repository.
+# Copy to .github/workflows/nat-capture.yml in kwieser76/LSY_NAT_Track (branch Redline-main).
+# The script is scripts/capture-nat.js (Node 20, no dependencies). Times are UTC:
+#   05:30Z  the eastbound set flown that night (valid 01-08Z) + the westbound set of the day (11:30-19Z)
+#   17:00Z  the eastbound set for the coming night (published ~13:20Z) + the westbound set again
+# so every set is captured twice and one late or skipped run loses nothing.
+name: NAT track capture
+
+on:
+  schedule:
+    - cron: "30 5 * * *"
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nat-capture
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out Redline-main
+        uses: actions/checkout@v4
+        with:
+          ref: Redline-main
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Capture nat.json (writes only when the message changed)
+        run: node scripts/capture-nat.js
+
+      - name: Commit and push if anything changed
+        run: |
+          # archive/ does not exist until the first capture was written (e.g. FAA down on the first run).
+          if [ -d archive ]; then git add archive; fi
+          if git diff --cached --quiet; then
+            echo "No change - nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "NAT capture $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin Redline-main
+          git push origin HEAD:Redline-main
