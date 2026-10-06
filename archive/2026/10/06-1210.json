@@ -1,0 +1,58 @@
+{
+ "capturedAt": "2026-10-06T12:10:35.969Z",
+ "source": "https://nms.aim.faa.gov/datanat/nat.json",
+ "signature": "EGGX1006/26|1|052035;EGGX1006/26|2|052036;EGGX1006/26|3|052036",
+ "parts": [
+  {
+   "accountability_id": "EGGXZOZX",
+   "origin_id": "EGGXZOZX",
+   "notam_number_formatted": "EGGX1006/26",
+   "icao_id": "EGGX",
+   "location_code": "EGGX",
+   "last_updated": "052035",
+   "condition_message": "NAT-1/3 TRACKS FLS 340/400 INCLUSIVE\r\nOCT 06/1130Z TO OCT 06/1900Z\r\nPART ONE OF THREE PARTS-\r\nA BALIX 61/20 62/30 62/40 61/50 SAVRY\r\nEAST LVLS NIL\r\nWEST LVLS 350 360 370 400\r\nEUR RTS WEST NIL\r\nNAR N918B-\r\nB ERAKA 60/20 61/30 61/40 59/50 AVUTI\r\nEAST LVLS NIL\r\nWEST LVLS 350 360 370 400\r\nEUR RTS WEST NIL\r\nNAR N842C N850C-\r\nC GOMUP 59/20 60/30 60/40 58/50 CUDDY\r\nEAST LVLS NIL\r\nWEST LVLS 340 350 360 370 380 390 400\r\nEUR RTS WEST NIL\r\nNAR N804C N806C-\r\nEND OF PART ONE OF THREE PARTS",
+   "notam_number": "",
+   "start_datetime": "2026-10-06T11:30:00Z",
+   "end_datetime": "2026-10-06T19:00:00Z",
+   "series": "",
+   "classification_code": "INTL",
+   "transaction_type": "NAT_TRACK",
+   "part_no": 1,
+   "entry_datetime": "2026-10-06T11:30:00.000Z"
+  },
+  {
+   "accountability_id": "EGGXZOZX",
+   "origin_id": "EGGXZOZX",
+   "notam_number_formatted": "EGGX1006/26",
+   "icao_id": "EGGX",
+   "location_code": "EGGX",
+   "last_updated": "052036",
+   "condition_message": "NAT-2/3 TRACKS FLS 340/400 INCLUSIVE\r\nOCT 06/1130Z TO OCT 06/1900Z\r\nPART TWO OF THREE PARTS-\r\nD SUNOT 58/20 59/30 59/40 57/50 HOIST\r\nEAST LVLS NIL\r\nWEST LVLS 340 350 360 370 380 390 400\r\nEUR RTS WEST NIL\r\nNAR N748B N750B N754B-\r\nE PIKIL 57/20 58/30 58/40 56/50 JANJO\r\nEAST LVLS NIL\r\nWEST LVLS 340 350 360 370 380 390 400\r\nEUR RTS WEST NIL\r\nNAR N710B N714B-\r\nF BEDRA 4830/20 46/30 45/40 44/50 BOBTU JAROM\r\nEAST LVLS NIL\r\nWEST LVLS 350 360 370 390 400\r\nEUR RTS WEST NIL\r\nNAR N56G N62C-\r\nG 44/40 43/50 JEBBY CARAC\r\nEAST LVLS NIL\r\nWEST LVLS 350 370 390\r\nEUR RTS WEST NIL\r\nNAR N28B N36A-\r\nEND OF PART TWO OF THREE PARTS",
+   "notam_number": "",
+   "start_datetime": "2026-10-06T11:30:00Z",
+   "end_datetime": "2026-10-06T19:00:00Z",
+   "series": "",
+   "classification_code": "INTL",
+   "transaction_type": "NAT_TRACK",
+   "part_no": 2,
+   "entry_datetime": "2026-10-06T11:30:00.000Z"
+  },
+  {
+   "accountability_id": "EGGXZOZX",
+   "origin_id": "EGGXZOZX",
+   "notam_number_formatted": "EGGX1006/26",
+   "icao_id": "EGGX",
+   "location_code": "EGGX",
+   "last_updated": "052036",
+   "condition_message": "NAT-3/3 TRACKS FLS 340/400 INCLUSIVE\r\nOCT 06/1130Z TO OCT 06/1900Z\r\nPART THREE OF THREE PARTS-\r\nH 43/40 42/50 42/60 DOVEY\r\nEAST LVLS NIL\r\nWEST LVLS 350 370 390\r\nEUR RTS WEST NIL\r\nNAR NIL-\r\nREMARKS.\r\n1. TMI IS 279.\r\n2. SEND RCL 90 TO 30 MINUTES PRIOR TO OCEANIC ENTRY POINT.\r\nINCLUDE MAX LEVEL IN RCL.\r\n3. PBCS OTS LEVELS 340-400. PBCS TRACKS AS FOLLOWS\r\nNO ASSIGNED PBCS TRACKS\r\nEND OF PBCS OTS\r\n4. SLOP SHOULD BE USED IN NAT AIRSPACE. LEFT SLOP PROHIBITED.\r\n5. 10 MINUTES AFTER PASSING OEP SQUAWK 2000 UNLESS OTHERWISE\r\nINSTRUCTED.\r\n6. ADS C AND CPDLC ARE MANDATED FOR LEVELS 290 TO 410 IN NAT\r\nAIRSPACE.\r\n7. UK AIP ENR 2.2 PARA 3.5.2 STATES THAT NAT OPERATORS SHALL FILE\r\nPRM'S.\r\n8. OPERATORS ARE REMINDED TO ONLY USE NAT TRACK DESIGNATORS IN FLIGHT\r\nPLANS WHEN FLYING THE WHOLE LENGTH OF THE NAT TRACK.\r\n9. DATA LINK EQUIPPED FLIGHTS NOT LOGGED ONTO DOMESTIC AIRSPACE,\r\nPRIOR TO ENTERING THE SHANWICK OCA, MUST INITIATE A LOGON TO\r\nEGGX 10 TO 25 MINS PRIOR TO OCA ENTRY.\r\n10. EGGX HAS DELAYED IMPLENTATION OF OCR UNTIL FURTHER NOTICE.\r\n11. NOTIFY ANY GNSS INTERFERENCE IN RCL CONFIRMING RNP CAPABILITY.-\r\nEND OF PART THREE OF THREE PARTS",
+   "notam_number": "",
+   "start_datetime": "2026-10-06T11:30:00Z",
+   "end_datetime": "2026-10-06T19:00:00Z",
+   "series": "",
+   "classification_code": "INTL",
+   "transaction_type": "NAT_TRACK",
+   "part_no": 3,
+   "entry_datetime": "2026-10-06T11:30:00.000Z"
+  }
+ ]
+}
