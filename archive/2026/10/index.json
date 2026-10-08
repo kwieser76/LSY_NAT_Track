@@ -92,5 +92,19 @@
     "lastUpdated": "072042"
    }
   ]
+ },
+ {
+  "file": "08-1211.json",
+  "capturedAt": "2026-10-08T12:11:13.400Z",
+  "sets": [
+   {
+    "icao": "EGGX",
+    "notam": "EGGX1008/26",
+    "from": "2026-10-08T11:30:00Z",
+    "to": "2026-10-08T19:00:00Z",
+    "parts": 3,
+    "lastUpdated": "072042"
+   }
+  ]
  }
 ]
