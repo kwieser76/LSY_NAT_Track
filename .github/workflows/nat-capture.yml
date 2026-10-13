@@ -4,12 +4,17 @@
 #   05:30Z  the eastbound set flown that night (valid 01-08Z) + the westbound set of the day (11:30-19Z)
 #   17:00Z  the eastbound set for the coming night (published ~13:20Z) + the westbound set again
 # so every set is captured twice and one late or skipped run loses nothing.
+# Backup slots (2026-10-13): GitHub started the 05:30Z run 3.5 to 8 h late all week and dropped one; 07:41Z and 19:11Z
+# (off-peak minutes) catch a dropped or very late run. They change nothing when the message is the same: the script
+# writes only when it changed, and the commit step stops when there is nothing to commit.
 name: NAT track capture
 
 on:
   schedule:
     - cron: "30 5 * * *"
     - cron: "0 17 * * *"
+    - cron: "41 7 * * *"
+    - cron: "11 19 * * *"
   workflow_dispatch:
 
 permissions:
