@@ -87,7 +87,7 @@ async function fetchNat() {
     const ac = new AbortController(), t = setTimeout(() => ac.abort(), 30000);
     try {
       const res = await fetch(URL, { signal: ac.signal, headers: { 'User-Agent': UA, Accept: 'application/json' } });
-      if (!res.ok) { last = 'HTTP ' + res.status; if (res.status >= 400 && res.status < 500 && res.status !== 429) break; continue; }
+      if (!res.ok) { last = 'HTTP ' + res.status; if (res.status >= 400 && res.status < 500) break; continue; }   // no retry after 403/429 (review 2026-10-13, L5)
       const j = JSON.parse(await res.text());
       if (!Array.isArray(j)) throw new Error('answer is not a list');
       return j;
