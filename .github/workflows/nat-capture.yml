@@ -7,6 +7,10 @@
 # Backup slots (2026-10-13): GitHub started the 05:30Z run 3.5 to 8 h late all week and dropped one; 07:41Z and 19:11Z
 # (off-peak minutes) catch a dropped or very late run. They change nothing when the message is the same: the script
 # writes only when it changed, and the commit step stops when there is nothing to commit.
+# Runs from outside (2026-10-13): cron-job.org calls workflow_dispatch at 05:35Z and 17:05Z (tools/wx-archive/
+# CRON-JOB-SETUP.md). A job set to every 10 minutes by mistake had started 144 runs a day, so a dispatch without "force"
+# runs only from 05:30 to 05:59Z and from 17:00 to 17:29Z. Started by hand with "force" ticked (gh workflow run
+# nat-capture.yml -f force=true) a run always runs. The scheduled runs are not gated.
 name: NAT track capture
 
 on:
@@ -16,6 +20,11 @@ on:
     - cron: "41 7 * * *"
     - cron: "11 19 * * *"
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Run outside the 05:30 and 17:00 UTC windows (tick when starting by hand)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,20 +38,35 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - name: Outside runs only in the capture windows (scheduled runs always; by hand with force always)
+        id: gate
+        run: |
+          set -u
+          hm=$(date -u +%H%M)
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ] || [ "${{ inputs.force }}" = "true" ] || { [ "$hm" -ge 0530 ] && [ "$hm" -lt 0600 ]; } || { [ "$hm" -ge 1700 ] && [ "$hm" -lt 1730 ]; }; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; echo "Runs (${{ github.event_name }}, $hm UTC)."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"; echo "Started from outside at $hm UTC, outside 05:30-05:59 and 17:00-17:29 - nothing to do."
+          fi
+
       - name: Check out Redline-main
+        if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v4
         with:
           ref: Redline-main
 
       - name: Set up Node 20
+        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
       - name: Capture nat.json (writes only when the message changed)
+        if: steps.gate.outputs.run == 'true'
         run: node scripts/capture-nat.js
 
       - name: Commit and push if anything changed
+        if: steps.gate.outputs.run == 'true'
         run: |
           # archive/ does not exist until the first capture was written (e.g. FAA down on the first run).
           if [ -d archive ]; then git add archive; fi
