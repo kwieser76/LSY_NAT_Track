@@ -800,5 +800,27 @@
     "lastUpdated": "202008"
    }
   ]
+ },
+ {
+  "file": "21-1705.json",
+  "capturedAt": "2026-10-21T17:05:36.214Z",
+  "sets": [
+   {
+    "icao": "EGGX",
+    "notam": "EGGX1021/26",
+    "from": "2026-10-21T11:30:00Z",
+    "to": "2026-10-21T19:00:00Z",
+    "parts": 2,
+    "lastUpdated": "202008"
+   },
+   {
+    "icao": "CZQX",
+    "notam": "CZQX1022/26",
+    "from": "2026-10-22T01:00:00Z",
+    "to": "2026-10-22T08:00:00Z",
+    "parts": 3,
+    "lastUpdated": "211313"
+   }
+  ]
  }
 ]
