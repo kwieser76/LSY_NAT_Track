@@ -1,0 +1,58 @@
+{
+ "capturedAt": "2026-10-28T21:29:51.148Z",
+ "source": "https://nms.aim.faa.gov/datanat/nat.json",
+ "signature": "CZQX1029/26|1|281259;CZQX1029/26|2|281300;CZQX1029/26|3|281300",
+ "parts": [
+  {
+   "accountability_id": "CZQXZQZX",
+   "origin_id": "CZQXZQZX",
+   "notam_number_formatted": "CZQX1029/26",
+   "icao_id": "CZQX",
+   "location_code": "CZQX",
+   "last_updated": "281259",
+   "condition_message": "NAT-1/3 TRACKS FLS 340/400 INCLUSIVE\r\nOCT 29/0100Z TO OCT 29/0800Z\r\nPART ONE OF THREE PARTS-\r\nT JOOPY 49/50 52/40 54/30 55/20 RESNO NETKI\r\nEAST LVLS 340 350 360 370 380 390 400\r\nWEST LVLS NIL\r\nEUR RTS EAST NIL\r\nNAR N371B N355C-\r\nU NICSO 48/50 51/40 53/30 54/20 DOGAL BEXET\r\nEAST LVLS 340 350 360 370 380 390 400\r\nWEST LVLS NIL\r\nEUR RTS EAST NIL\r\nNAR N285B N261B-\r\nV PORTI 47/50 50/40 52/30 53/20 MALOT GISTI\r\nEAST LVLS 340 350 360 370 380 390 400\r\nWEST LVLS NIL\r\nEUR RTS EAST NIL\r\nNAR N199B N171E-\r\nEND OF PART ONE OF THREE PARTS",
+   "notam_number": "",
+   "start_datetime": "2026-10-29T01:00:00Z",
+   "end_datetime": "2026-10-29T08:00:00Z",
+   "series": "",
+   "classification_code": "INTL",
+   "transaction_type": "NAT_TRACK",
+   "part_no": 1,
+   "entry_datetime": "2026-10-29T01:00:00.000Z"
+  },
+  {
+   "accountability_id": "CZQXZQZX",
+   "origin_id": "CZQXZQZX",
+   "notam_number_formatted": "CZQX1029/26",
+   "icao_id": "CZQX",
+   "location_code": "CZQX",
+   "last_updated": "281300",
+   "condition_message": "NAT-2/3 TRACKS FLS 340/400 INCLUSIVE\r\nOCT 29/0100Z TO OCT 29/0800Z\r\nPART TWO OF THREE PARTS-\r\nW SUPRY 46/50 49/40 51/30 52/20 LIMRI XETBO\r\nEAST LVLS 340 350 360 370 380 390 400\r\nWEST LVLS NIL\r\nEUR RTS EAST NIL\r\nNAR N119B N93B-\r\nX RAFIN 45/50 48/40 50/30 51/20 DINIM ELSOX\r\nEAST LVLS 340 350 360 370 380 390 400\r\nWEST LVLS NIL\r\nEUR RTS EAST NIL\r\nNAR N83B N55B-\r\nY DOVEY 42/60 44/50 47/40 49/30 50/20 SOMAX ATSUR\r\nEAST LVLS 340 350 360 370 380 390 400\r\nWEST LVLS NIL\r\nEUR RTS EAST NIL\r\nNAR NIL-\r\nEND OF PART TWO OF THREE PARTS",
+   "notam_number": "",
+   "start_datetime": "2026-10-29T01:00:00Z",
+   "end_datetime": "2026-10-29T08:00:00Z",
+   "series": "",
+   "classification_code": "INTL",
+   "transaction_type": "NAT_TRACK",
+   "part_no": 2,
+   "entry_datetime": "2026-10-29T01:00:00.000Z"
+  },
+  {
+   "accountability_id": "CZQXZQZX",
+   "origin_id": "CZQXZQZX",
+   "notam_number_formatted": "CZQX1029/26",
+   "icao_id": "CZQX",
+   "location_code": "CZQX",
+   "last_updated": "281300",
+   "condition_message": "NAT-3/3 TRACKS FLS 340/400 INCLUSIVE\r\nOCT 29/0100Z TO OCT 29/0800Z\r\nPART THREE OF THREE PARTS-\r\nZ SOORY 43/50 46/40 48/30 49/20 BEDRA NASBA\r\nEAST LVLS 350 360 380 390 400\r\nWEST LVLS NIL\r\nEUR RTS EAST NIL\r\nNAR NIL-\r\nREMARKS:\r\n1.TMI IS 302.\r\n2.SEND RCL 90-60 MINUTES PRIOR TO OCEANIC ENTRY POINT.\r\nINCLUDE MAX LEVEL IN RCL.\r\n3.PBCS OTS LEVELS 340-400.PBCS TRACKS AS FOLLOWS:\r\nNO ASSIGNED PBCS TRACKS\r\nEND OF PBCS OTS.\r\n4.SLOP SHOULD BE USED IN ALL OCEANIC AIRSPACE. LEFT SLOP IS\r\n PROHIBITED.\r\n5.10 MINUTES AFTER PASSING OEP SQUAWK 2000 UNLESS OTHERWISE\r\n INSTRUCTED\r\n6.ADS-C AND CPDLC ARE MANDATED FOR LEVELS 290-410 IN NAT AIRSPACE\r\n7.DATA LINK EQUIPPED FLIGHTS NOT LOGGED ONTO DOMESTIC AIRSPACE,\r\nPRIOR TO ENTERING THE GANDER OCA,MUST INITIATE A LOGON TO CZQX 10-25\r\nMINS PRIOR TO OCEANIC ENTRY.\r\n8.OPERATORS SHALL FILE NAT DESIGNATORS IN FLIGHT PLANS WHEN FLYING\r\nTHE ENTIRE NAT TRACK.\r\n9.OPERATORS REFER TO HALF DEGREE COORDINATES NOTAM H4595/26\r\n10.OPERATORS REFER TO NOTAM H6671/26 FOR EASTBOUND BOBTU AND TALGO\r\nFLIGHT PLANNING RESTRICTIONS.-\r\nEND OF PART THREE OF THREE PARTS",
+   "notam_number": "",
+   "start_datetime": "2026-10-29T01:00:00Z",
+   "end_datetime": "2026-10-29T08:00:00Z",
+   "series": "",
+   "classification_code": "INTL",
+   "transaction_type": "NAT_TRACK",
+   "part_no": 3,
+   "entry_datetime": "2026-10-29T01:00:00.000Z"
+  }
+ ]
+}
