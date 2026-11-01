@@ -34,5 +34,19 @@
     "lastUpdated": "011401"
    }
   ]
+ },
+ {
+  "file": "01-2057.json",
+  "capturedAt": "2026-11-01T20:57:10.009Z",
+  "sets": [
+   {
+    "icao": "CZQX",
+    "notam": "CZQX1102/26",
+    "from": "2026-11-02T01:00:00Z",
+    "to": "2026-11-02T08:00:00Z",
+    "parts": 3,
+    "lastUpdated": "011401"
+   }
+  ]
  }
 ]
