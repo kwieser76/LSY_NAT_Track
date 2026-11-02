@@ -70,5 +70,19 @@
     "lastUpdated": "012104"
    }
   ]
+ },
+ {
+  "file": "02-1345.json",
+  "capturedAt": "2026-11-02T13:45:23.792Z",
+  "sets": [
+   {
+    "icao": "EGGX",
+    "notam": "EGGX1102/26",
+    "from": "2026-11-02T11:30:00Z",
+    "to": "2026-11-02T19:00:00Z",
+    "parts": 3,
+    "lastUpdated": "012104"
+   }
+  ]
  }
 ]
