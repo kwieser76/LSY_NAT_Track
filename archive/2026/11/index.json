@@ -222,5 +222,27 @@
     "lastUpdated": "041408"
    }
   ]
+ },
+ {
+  "file": "04-2224.json",
+  "capturedAt": "2026-11-04T22:24:04.315Z",
+  "sets": [
+   {
+    "icao": "CZQX",
+    "notam": "CZQX1105/26",
+    "from": "2026-11-05T01:00:00Z",
+    "to": "2026-11-05T08:00:00Z",
+    "parts": 3,
+    "lastUpdated": "041408"
+   },
+   {
+    "icao": "EGGX",
+    "notam": "EGGX1105/26",
+    "from": "2026-11-05T11:30:00Z",
+    "to": "2026-11-05T19:00:00Z",
+    "parts": 3,
+    "lastUpdated": "042059"
+   }
+  ]
  }
 ]
