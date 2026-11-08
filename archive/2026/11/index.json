@@ -476,5 +476,27 @@
     "lastUpdated": "081358"
    }
   ]
+ },
+ {
+  "file": "08-2057.json",
+  "capturedAt": "2026-11-08T20:57:01.582Z",
+  "sets": [
+   {
+    "icao": "CZQX",
+    "notam": "CZQX1109/26",
+    "from": "2026-11-09T01:00:00Z",
+    "to": "2026-11-09T08:00:00Z",
+    "parts": 3,
+    "lastUpdated": "081358"
+   },
+   {
+    "icao": "EGGX",
+    "notam": "EGGX1109/26",
+    "from": "2026-11-09T11:30:00Z",
+    "to": "2026-11-09T19:00:00Z",
+    "parts": 3,
+    "lastUpdated": "082010"
+   }
+  ]
  }
 ]
